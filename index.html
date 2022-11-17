@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <section class="weather-wrapper">
+            <div class="weather-inner-wrapper">
+                <div>
+                    <img class="weather-image" src="./Images/rain.png" width="50" height="50" alt="Rain png">
+                    <h2 class="weather-region">Tashkent</h2>
+                    <p class="weather-desc"><span class="weather-celcius">28</span>°C</p>
+                    <a class="weather-location" href="#" target="blank">Show in Map</a>
+                </div>
+                
+                <form class="search-form" autocomplete="off">
+                    <input class="search-input" type="text" placeholder="Search region" name="user_search" aria-label="Search region">
+                    <button class="search-button" type="submit">Search</button>
+                </form>
+
+                <div>
+                    <span class="weather-span">
+                        <p class="humidity">Humidity</p>
+                        <p class="weather-humidity weather-info">50%</p>
+                    </span>
+
+                    <span class="weather-span">
+                        <p class="humidity">Air pressure</p>
+                        <p class="weather-air-pressure weather-info">1009.483 PS</p>
+                    </span>
+
+                    <span class="weather-span">
+                        <p class="humidity">Wind speed</p>
+                        <p class="weather-info">
+                            <span class="weather-wind-speed">1.4</span> km/h</p>
+                    </span>
+                </div>
+            </div>
+        
+            
+
+            <ul class="weather-list">
+                <li class="weather-item">
+                    <h3 class="item-name">Tokyo</h3>
+                    <p><span class="item-gradus tokyo-gradus">28</span>°C</p>
+                    <p class="item-humidity">Humidity: <span class="tokyo-humidity">50%</span></p>
+                </li>
+
+                <li class="weather-item">
+                    <h3 class="item-name">Paris</h3>
+                    <p><span class="item-gradus paris-gradus">28</span>°C</p>
+                    <p class="item-humidity">Humidity: <span class="paris-humidity">50%</span></p>
+                </li>
+
+                <li class="weather-item">
+                    <h3 class="item-name">Istanbul</h3>
+                    <p><span class="item-gradus turkey-gradus">28</span>°C</p>
+                    <p class="item-humidity">Humidity: <span class="turkey-humidity">50%</span></p>
+                </li>
+
+                <li class="weather-item">
+                    <h3 class="item-name">Moskva</h3>
+                    <p><span class="item-gradus russia-gradus">28</span>°C</p>
+                    <p class="item-humidity">Humidity: <span class="russia-humidity">50%</span></p>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
